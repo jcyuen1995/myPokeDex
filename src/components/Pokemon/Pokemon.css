@@ -1,0 +1,28 @@
+div.spinner-pokemon {
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-wrap:wrap;
+    height:96px;
+    width:96px;
+}
+
+div.spinner-pokemon p {
+    margin-top: 5%;
+}
+
+div.pokemon {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+    width: 100%;
+}
+
+div.pokemon p {
+    width: 100%;
+}
+
+div.pokemon a {
+    color: black;
+}

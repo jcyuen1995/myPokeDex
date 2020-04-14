@@ -1,0 +1,37 @@
+nav.myNav span {
+    font-size: 2rem;
+}
+
+button.music{
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+
+}
+
+nav.myNav {
+    display:flex;
+    justify-content:space-between;
+	align-items: center;
+	background-color: #cc0000;
+	color: #fccf00;
+}
+
+div.stick {
+	position:sticky;
+	top: 0;
+}
+
+a h1 {
+	text-decoration: none;
+	color: #fccf00;
+	text-shadow: -2px -2px 0 #2468b1, 2px -2px 0 #2468b1, -2px 2px 0 #2468b1, 2px 2px 0 #2468b1;
+}
+
+button.music span {
+	text-shadow: -2px -2px 0 #2468b1, 2px -2px 0 #2468b1, -2px 2px 0 #2468b1, 2px 2px 0 #2468b1;
+}

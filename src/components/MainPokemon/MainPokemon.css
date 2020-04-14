@@ -1,0 +1,106 @@
+div.mainPoke {
+    display:flex;
+    justify-content: center;
+    width: 90vw;
+    flex-wrap:wrap;
+    align-content:flex-start;
+    margin: auto;
+}
+
+div.mainPoke.loading {
+    align-content: center;
+}
+
+div.mainPoke img {
+    margin-bottom: 3%;
+    width: 300px;
+    height: 300px;
+}
+
+div.mainPoke h2 {
+    width: 100%;
+    text-align:center;
+    text-transform: uppercase;
+    height: 5vh;
+    margin-top: 4%;
+}
+
+table.stats {
+    text-align:center;
+    height: 40%;
+}
+
+table.stats td {
+    width: 30%;
+}
+table.info {
+    width: 100%;
+    text-align:center;
+}
+
+td {
+    text-transform: capitalize;
+}
+
+figure figcaption {
+    text-align: center;
+    font-weight: bold;
+}
+
+figure img {
+    border: 1px solid black;
+}
+
+div.mainPoke figure {
+    margin-bottom: 3%;
+}
+td.type {
+    width: 30%
+}
+
+div.info {
+    width: 100%;
+    text-align:center;
+}
+
+table.info th.attributes {
+    width: 10%;
+    background-color: #333940;
+    color: #f7f8f8;
+    border:none;
+}
+
+table.info th {
+    width: 30%;
+}
+
+.table thead th.infoBar {
+    border-bottom: none;
+}
+
+.table-bordered thead th.infoBar {
+    border-left: none;
+}
+
+div.sprites {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+    width: 50%
+}
+
+div.mainPokemon {
+    display:flex;
+    flex-wrap:wrap;
+    width: 5%;
+    justify-content:center;
+    align-items:center;
+}
+
+div.mainPoke a.MuiButton-outlined {
+    margin-top: 2%;
+}
+
+div.mainPoke.loading {
+    height: 90vh;
+}
