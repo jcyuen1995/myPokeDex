@@ -12,11 +12,13 @@ const Pokemon = (props) => {
     const {pokemonURL, getMainPoke} = props;
     //grab only name and sprite fro mthe data 
     const [pokemon, getPokemon] = useState([{sprites: '', name: '', stats: [{}]}]);
+    const [failed,getFailed] = useState(false);
 
     useEffect(()=> {
         //api call for sprites
+        //default props will first be N/A as the app.js retrieves data but will change if the api call is made 
         if (pokemonURL === 'N/A') {
-            console.log("Failed to Load Api")
+            console.log('Retrieving')
         } else {
         axios.get(`${pokemonURL}`).then((response) =>{
             setTimeout(()=> {
@@ -24,9 +26,15 @@ const Pokemon = (props) => {
                     sprites: response.data.sprites.front_default, 
                     name: response.data.name,
                     stats: response.data.stats
-                }, 8000)
+                }, 4000)
             });
         });}
+        // if pokemonURL is still defaultProps then api call failed
+        setTimeout (()=> {
+            if (pokemonURL === 'N/A') {
+                getFailed(true)
+            }
+        },10000)
     },[pokemonURL, getMainPoke])
 
     return (
@@ -37,7 +45,7 @@ const Pokemon = (props) => {
                 to do: make loading spinner component
             
             */}
-            {pokemon.length === 1 && (
+            {pokemon.length === 1 && failed === false &&(
                 <>
                 
                 <div className = "spinner-pokemon">
@@ -48,6 +56,8 @@ const Pokemon = (props) => {
                 <p>Loading...</p>
                 </>
             )}
+
+            {failed === true ? (<p>Failed to Load</p>) : <></> }
             <Link 
                 to = {`/${pokemon.name}`} 
                 style={{ textDecoration: 'none' }} 
