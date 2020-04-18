@@ -4,7 +4,7 @@ import { shallow } from 'enzyme';
 import MainPokemon from './MainPokemon';
 
 test('renders without crashing', () => {
-    const buttonComponentRender = shallow(<MainPokemon>Testing!</MainPokemon>);
+    const mainPokemonComponentRender = shallow(<MainPokemon>Testing!</MainPokemon>);
 
-    expect(buttonComponentRender.length).toBe(1);
+    expect(mainPokemonComponentRender.length).toBe(1);
 });

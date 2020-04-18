@@ -4,7 +4,7 @@ import { shallow } from 'enzyme';
 import Footer from './Footer';
 
 test('renders without crashing', () => {
-    const buttonComponentRender = shallow(<Footer>Testing!</Footer>);
+    const footerComponentRender = shallow(<Footer>Testing!</Footer>);
 
-    expect(buttonComponentRender.length).toBe(1);
+    expect(footerComponentRender.length).toBe(1);
 });
